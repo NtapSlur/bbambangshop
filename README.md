@@ -84,5 +84,10 @@ This is the place for you to write reflections:
 1. Menurut saya, DashMap diperlukan tipe data yang mirip dengan HashMap tetapi lebih cocok untuk multithreading. Hal ini sejalan dengan bambangshop yang menerapkan multithreading. Untuk singleton, menurut saya masih cocok untuk diimplementasikan agar dapat memastikan jika DashMap untuk suatu subscriber terhadap produk berada hanya pada satu dashmap
 
 #### Reflection Publisher-2
+1. Kita perlu untuk memisahkan service dengan repository agar dapat memenuhi prinsip SOLID yaitu single responsibility, di mana service berfungsi untuk mengolah data yang didapat dari repository dan repository berfungsi untuk mengakses data dari database. Selain itu, pemisahan repository dan service juga berguna untuk mengmaintain kode.
+
+1. Jika kita menggunakan model saja, maka perubahan yang terjadi sekecil apapun dapat menyebabkan banyak perubahan ke kode kode lain, sehingga tidak efisien untuk code maintainability.
+
+1. Postman membantu saya dalam menguji response yang dihasilkan oleh website ketika menerima sebuah request, terutama untuk TK yang di mana API berperan sangat penting karena API menjadi perantara untuk mengakses data. Oleh karena itu, diperlukan akses API yang benar sehingga diperlukannya pengujian terhadap response API.
 
 #### Reflection Publisher-3
