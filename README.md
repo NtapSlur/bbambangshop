@@ -77,6 +77,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. Menurut saya, penggunaan interface diperlukan tergantung pada design pattern dari Observernya. Jika Observer yang digunakan memiliki banyak jenis, maka kita perlu membuat interface untuk Observer. Jika Observer yang digunakan hanya satu, maka tidak diperlukan interface.
+
+1. Penggunaan DashMap pada kasus bambangshop ini agar dapat memetakan tiap jenis produk ke tiap subcriber yang memerlukannya. Hal ini lebih efisien jika dibandingkan dengan menggunakan Vec, di mana pemetaan menggunakan DashMap memakan space yang linear (O(N)). Jika ingin memetakan dengan menggunakan Vec, perlu digunakan Vec dua dimensi (matriks) untuk memetakan antara produk dengan subscriber, yang di mana memakan space yang lebih besar (O(N^2))
+
+1. Menurut saya, DashMap diperlukan tipe data yang mirip dengan HashMap tetapi lebih cocok untuk multithreading. Hal ini sejalan dengan bambangshop yang menerapkan multithreading. Untuk singleton, menurut saya masih cocok untuk diimplementasikan agar dapat memastikan jika DashMap untuk suatu subscriber terhadap produk berada hanya pada satu dashmap
 
 #### Reflection Publisher-2
 
