@@ -91,3 +91,8 @@ This is the place for you to write reflections:
 1. Postman membantu saya dalam menguji response yang dihasilkan oleh website ketika menerima sebuah request, terutama untuk TK yang di mana API berperan sangat penting karena API menjadi perantara untuk mengakses data. Oleh karena itu, diperlukan akses API yang benar sehingga diperlukannya pengujian terhadap response API.
 
 #### Reflection Publisher-3
+1. Kita menggunakan push model yang di mana dapat dilihat bahwa service akan memanggil method yang mengiterasi semua subscriber untuk mendapatkan update terbaru
+
+1. Jika kita menggunakan pull model, nantinya tiap subscriber perlu menentukan perubahan data yang terjadi apakah relevan untuk mereka. Tetapi, observer akan lebih bebas untuk menentukan data yang akan diambil.
+
+1. Jika kita tidak menggunakan multithreading, pada saat NotificationService perlu memberikan notifikasi kepada tiap subscriber, maka akan terjadi process notifikasi yang panjang sekali berdasarkan jumlah subscriber yang ada sehingga akan menghambat proses komputasi pada website.
