@@ -1,6 +1,8 @@
+use bambangshop::REQWEST_CLIENT;
 use dashmap::DashMap;
 use lazy_static::lazy_static;
-use crate::model::subscriber::Subscriber;
+use rocket::{serde::json::to_string, tokio, log};
+use crate::model::{notification::Notification, subscriber::Subscriber};
 
 // Singleton of Database
 lazy_static!{
